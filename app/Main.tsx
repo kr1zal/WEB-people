@@ -305,8 +305,7 @@ export default function Main() {
           <motion.div {...heroFade(0.8)} className="mt-auto pt-10 pb-8 lg:pt-16 lg:pb-12">
             <div className="max-w-[560px] border-l-[3px] border-[#1b2d4e] pl-5 dark:border-[#8fa7cc]">
               <p className="font-display text-lg leading-[1.5] font-normal text-gray-900 italic dark:text-gray-100">
-                Пока не построена юнит-экономика, любой отчёт — только интуиция. Моя работа —
-                заменить интуицию расчётом.
+                Финансы — язык бизнеса. Задача финдиректора — говорить на нём без акцента.
               </p>
             </div>
           </motion.div>
