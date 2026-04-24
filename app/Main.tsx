@@ -214,7 +214,7 @@ export default function Main() {
       : {
           initial: { opacity: 0, y: 24 },
           animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.7, delay, ease: [0.25, 0.1, 0.25, 1] },
+          transition: { duration: 0.7, delay, ease: [0.25, 0.1, 0.25, 1] as const },
         }
 
   const photoReveal = prefersReducedMotion
@@ -222,7 +222,7 @@ export default function Main() {
     : {
         initial: { opacity: 0, scale: 0.97, filter: 'blur(6px)' },
         animate: { opacity: 1, scale: 1, filter: 'blur(0px)' },
-        transition: { duration: 1, delay: 0, ease: [0.25, 0.1, 0.25, 1] },
+        transition: { duration: 1, delay: 0, ease: [0.25, 0.1, 0.25, 1] as const },
       }
 
   return (

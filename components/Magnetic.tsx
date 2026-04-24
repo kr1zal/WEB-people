@@ -6,18 +6,10 @@ interface MagneticProps {
   children: React.ReactNode
   className?: string
   strength?: number
-  as?: keyof JSX.IntrinsicElements
-  [key: string]: unknown
 }
 
-export default function Magnetic({
-  children,
-  className = '',
-  strength = 0.15,
-  as: Tag = 'div',
-  ...props
-}: MagneticProps) {
-  const ref = useRef<HTMLElement>(null)
+export default function Magnetic({ children, className = '', strength = 0.15 }: MagneticProps) {
+  const ref = useRef<HTMLDivElement>(null)
   const [prefersReduced, setPrefersReduced] = useState(false)
 
   useEffect(() => {
@@ -47,15 +39,13 @@ export default function Magnetic({
   }, [])
 
   return (
-    // @ts-ignore
-    <Tag
+    <div
       ref={ref}
       className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      {...props}
     >
       {children}
-    </Tag>
+    </div>
   )
 }
