@@ -239,7 +239,7 @@ export default function Main() {
             width={960}
             height={1280}
             className="h-full w-full object-cover object-top saturate-[0.9]"
-            priority
+            loading="eager"
           />
           <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_right,#e2e7dd_0%,transparent_40%)]" />
           <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_top,#e2e7dd_0%,transparent_30%)]" />
@@ -254,7 +254,7 @@ export default function Main() {
                 width={680}
                 height={907}
                 className="h-full w-full object-cover object-top saturate-[0.9]"
-                priority
+                loading="eager"
               />
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#e2e7dd] to-transparent" />
             </div>
