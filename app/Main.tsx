@@ -241,8 +241,8 @@ export default function Main() {
             className="h-full w-full object-cover object-top saturate-[0.9]"
             priority
           />
-          <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_right,#f5f2ed_0%,transparent_40%)] dark:bg-[linear-gradient(to_right,#111110_0%,transparent_40%)]" />
-          <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_top,#f5f2ed_0%,transparent_30%)] dark:bg-[linear-gradient(to_top,#111110_0%,transparent_30%)]" />
+          <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_right,#e2e7dd_0%,transparent_40%)]" />
+          <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_top,#e2e7dd_0%,transparent_30%)]" />
         </motion.div>
 
         <div className="relative z-10 mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-[1380px] flex-col justify-start px-6 pt-[72px] sm:px-12 sm:pt-[100px] lg:pt-[140px]">
@@ -256,13 +256,13 @@ export default function Main() {
                 className="h-full w-full object-cover object-top saturate-[0.9]"
                 priority
               />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#f5f2ed] to-transparent dark:from-[#111110]" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#e2e7dd] to-transparent" />
             </div>
           </motion.div>
 
           <motion.h1
             {...heroFade(0.15)}
-            className="font-display max-w-[520px] text-5xl leading-[1.05] tracking-tight text-gray-900 sm:text-6xl lg:text-[clamp(48px,5vw,72px)] xl:text-[clamp(56px,6vw,80px)] dark:text-gray-100"
+            className="font-display max-w-[520px] text-5xl leading-[1.05] tracking-tight text-gray-900 sm:text-6xl lg:text-[clamp(48px,5vw,72px)] xl:text-[clamp(56px,6vw,80px)]"
           >
             Оксана
             <br />
@@ -271,16 +271,16 @@ export default function Main() {
 
           <motion.div
             {...heroFade(0.35)}
-            className="mt-5 h-7 text-lg font-medium text-[#1b2d4e] dark:text-[#8fa7cc]"
+            className="mt-5 h-7 text-lg font-medium text-[#7a1f2e]"
           >
             <TypingEffect words={typingRoles} />
           </motion.div>
 
           <motion.p
             {...heroFade(0.45)}
-            className="mt-6 max-w-[500px] text-base leading-7 text-gray-600 dark:text-gray-300"
+            className="mt-6 max-w-[500px] text-base leading-7 text-gray-600"
           >
-            <strong className="font-semibold text-gray-900 dark:text-gray-100">
+            <strong className="font-semibold text-gray-900">
               15+ лет в финансах, 10+ лет управленческого опыта.
             </strong>{' '}
             Финансовый директор Холдинга. Строю финансовые структуры, юнит-экономику и системы
@@ -290,21 +290,21 @@ export default function Main() {
           <motion.div {...heroFade(0.6)} className="mt-8 flex gap-3">
             <Link
               href="#companies"
-              className="rounded-lg bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-px hover:shadow-md dark:bg-gray-100 dark:text-gray-900"
+              className="rounded-lg bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-px hover:shadow-md"
             >
               Компании
             </Link>
             <Link
               href="#experience"
-              className="rounded-lg border border-gray-300 px-6 py-2.5 text-sm font-medium text-gray-700 transition-all duration-200 hover:-translate-y-px hover:border-gray-400 dark:border-gray-700 dark:text-gray-300 dark:hover:border-gray-600"
+              className="rounded-lg border border-gray-300 px-6 py-2.5 text-sm font-medium text-gray-700 transition-all duration-200 hover:-translate-y-px hover:border-gray-400"
             >
               Опыт
             </Link>
           </motion.div>
 
           <motion.div {...heroFade(0.8)} className="mt-auto pt-10 pb-8 lg:pt-16 lg:pb-12">
-            <div className="max-w-[560px] border-l-[3px] border-[#1b2d4e] pl-5 dark:border-[#8fa7cc]">
-              <p className="font-display text-lg leading-[1.5] font-normal text-gray-900 italic dark:text-gray-100">
+            <div className="max-w-[560px] border-l-[3px] border-[#7a1f2e] pl-5">
+              <p className="font-display text-lg leading-[1.5] font-normal text-gray-900 italic">
                 Финансы — язык бизнеса. Задача финдиректора — говорить на нём без акцента.
               </p>
             </div>
@@ -315,27 +315,27 @@ export default function Main() {
       {/* ═══ EXPERIENCE ═══ */}
       <section id="experience" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-10 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 sm:mb-12 dark:border-gray-100">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
+          <div className="mb-10 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 sm:mb-12">
+            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
               Опыт
             </h2>
-            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase dark:text-gray-500">
+            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
               Карьерный путь
             </span>
           </div>
         </Reveal>
 
         <Reveal>
-          <div className="mb-10 grid grid-cols-2 gap-y-5 border-b border-gray-200 pb-7 sm:mb-12 sm:flex sm:gap-0 sm:pb-7 dark:border-gray-800">
+          <div className="mb-10 grid grid-cols-2 gap-y-5 border-b border-gray-200 pb-7 sm:mb-12 sm:flex sm:gap-0 sm:pb-7">
             {impactNumbers.map((item, i) => (
               <div
                 key={item.label}
-                className={`${i % 2 === 1 ? 'border-l border-gray-200 pl-5 dark:border-gray-800' : 'pr-5'} sm:flex-1 ${i > 0 ? 'sm:border-l sm:border-gray-200 sm:pl-6 dark:sm:border-gray-800' : ''} sm:pr-6`}
+                className={`${i % 2 === 1 ? 'border-l border-gray-200 pl-5' : 'pr-5'} sm:flex-1 ${i > 0 ? 'sm:border-l sm:border-gray-200 sm:pl-6' : ''} sm:pr-6`}
               >
-                <div className="font-display text-3xl text-[#1b2d4e] sm:text-4xl lg:text-5xl dark:text-[#8fa7cc]">
+                <div className="font-display text-3xl text-[#7a1f2e] sm:text-4xl lg:text-5xl">
                   {item.num}
                 </div>
-                <div className="mt-1.5 text-xs text-gray-500 sm:text-[13px] dark:text-gray-400">
+                <div className="mt-1.5 text-xs text-gray-500 sm:text-[13px]">
                   {item.label}
                 </div>
               </div>
@@ -346,31 +346,31 @@ export default function Main() {
         {/* ── Desktop: Hero + Rows ── */}
         <div className="hidden md:block">
           <Reveal>
-            <div className="grid grid-cols-[1fr_280px] gap-8 border-b border-gray-200 pb-10 lg:grid-cols-[1fr_340px] lg:gap-12 dark:border-gray-800">
+            <div className="grid grid-cols-[1fr_280px] gap-8 border-b border-gray-200 pb-10 lg:grid-cols-[1fr_340px] lg:gap-12">
               <div>
-                <div className="text-[11px] font-semibold tracking-[0.15em] text-gray-400 uppercase dark:text-gray-500">
+                <div className="text-[11px] font-semibold tracking-[0.15em] text-gray-400 uppercase">
                   {heroPosition.period} · {heroPosition.duration}
                 </div>
-                <h3 className="font-display mt-3 text-[32px] leading-[1.2] text-gray-900 dark:text-gray-100">
+                <h3 className="font-display mt-3 text-[32px] leading-[1.2] text-gray-900">
                   {heroPosition.role}
                 </h3>
-                <div className="mt-1.5 text-base font-medium text-[#1b2d4e] dark:text-[#8fa7cc]">
+                <div className="mt-1.5 text-base font-medium text-[#7a1f2e]">
                   {heroPosition.company}
                 </div>
-                <p className="mt-4 max-w-[580px] text-[15px] leading-[1.75] text-gray-600 dark:text-gray-300">
+                <p className="mt-4 max-w-[580px] text-[15px] leading-[1.75] text-gray-600">
                   {heroPosition.desc}
                 </p>
               </div>
-              <div className="flex flex-col border-l border-gray-200 pl-12 dark:border-gray-800">
+              <div className="flex flex-col border-l border-gray-200 pl-12">
                 {heroPosition.stats.map((stat) => (
                   <div
                     key={stat.label}
-                    className="flex items-baseline justify-between gap-4 border-b border-gray-200 py-4 last:border-b-0 dark:border-gray-800"
+                    className="flex items-baseline justify-between gap-4 border-b border-gray-200 py-4 last:border-b-0"
                   >
-                    <span className="font-display text-[22px] text-[#1b2d4e] dark:text-[#8fa7cc]">
+                    <span className="font-display text-[22px] text-[#7a1f2e]">
                       {stat.num}
                     </span>
-                    <span className="text-xs text-gray-400 dark:text-gray-500">{stat.label}</span>
+                    <span className="text-xs text-gray-400">{stat.label}</span>
                   </div>
                 ))}
               </div>
@@ -380,31 +380,31 @@ export default function Main() {
           <div className="flex flex-col">
             {positions.map((pos, i) => (
               <Reveal key={pos.period} delay={i * 0.08}>
-                <div className="group grid grid-cols-[180px_1fr_auto] items-baseline gap-6 border-b border-gray-200 py-6 transition-all duration-200 hover:pl-2 dark:border-gray-800">
+                <div className="group grid grid-cols-[180px_1fr_auto] items-baseline gap-6 border-b border-gray-200 py-6 transition-all duration-200 hover:pl-2">
                   <div>
-                    <div className="text-xs font-semibold tracking-[0.08em] text-gray-400 uppercase dark:text-gray-500">
+                    <div className="text-xs font-semibold tracking-[0.08em] text-gray-400 uppercase">
                       {pos.period}
                     </div>
-                    <div className="mt-0.5 text-[11px] text-gray-400 opacity-70 dark:text-gray-500">
+                    <div className="mt-0.5 text-[11px] text-gray-400 opacity-70">
                       {pos.duration}
                     </div>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-display text-xl text-gray-900 transition-colors duration-200 group-hover:text-[#1b2d4e] dark:text-gray-100 dark:group-hover:text-[#8fa7cc]">
+                    <h3 className="font-display text-xl text-gray-900 transition-colors duration-200 group-hover:text-[#7a1f2e]">
                       {pos.role}
                     </h3>
-                    <div className="mt-0.5 text-[13px] font-medium text-[#1b2d4e] dark:text-[#8fa7cc]">
+                    <div className="mt-0.5 text-[13px] font-medium text-[#7a1f2e]">
                       {pos.company}
                     </div>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-gray-500 dark:text-gray-400">
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-gray-500">
                       {pos.oneLiner}
                     </p>
                   </div>
                   <div className="text-right">
-                    <div className="font-display text-[22px] text-[#1b2d4e] dark:text-[#8fa7cc]">
+                    <div className="font-display text-[22px] text-[#7a1f2e]">
                       {pos.metricNum}
                     </div>
-                    <div className="mt-1 text-[10px] font-semibold tracking-[0.08em] text-gray-400 uppercase dark:text-gray-500">
+                    <div className="mt-1 text-[10px] font-semibold tracking-[0.08em] text-gray-400 uppercase">
                       {pos.metricLabel}
                     </div>
                   </div>
@@ -416,11 +416,11 @@ export default function Main() {
 
         {/* ── Mobile: Vertical Timeline ── */}
         <div className="relative flex flex-col gap-2 pl-7 md:hidden">
-          <div className="absolute top-2 bottom-2 left-[5px] w-[1.5px] bg-gray-300 dark:bg-gray-700" />
+          <div className="absolute top-2 bottom-2 left-[5px] w-[1.5px] bg-gray-300" />
 
           <div className="relative scroll-mt-4">
             <div
-              className={`absolute top-1/2 -left-7 z-[2] h-3 w-3 -translate-y-1/2 rounded-full transition-colors duration-300 ${openPosition === 'hero' ? 'bg-[#1b2d4e] shadow-[0_0_0_3px_rgba(27,45,78,0.12)] dark:bg-[#8fa7cc] dark:shadow-[0_0_0_3px_rgba(143,167,204,0.15)]' : 'border-2 border-[#f5f2ed] bg-gray-300 shadow-[0_0_0_3px_rgba(0,0,0,0.04)] dark:border-[#111110] dark:bg-gray-600 dark:shadow-[0_0_0_3px_rgba(255,255,255,0.04)]'}`}
+              className={`absolute top-1/2 -left-7 z-[2] h-3 w-3 -translate-y-1/2 rounded-full transition-colors duration-300 ${openPosition === 'hero' ? 'bg-[#7a1f2e] shadow-[0_0_0_3px_rgba(122,31,46,0.12)]' : 'border-2 border-[#e2e7dd] bg-gray-300 shadow-[0_0_0_3px_rgba(0,0,0,0.04)]'}`}
             />
             <button
               ref={(el) => {
@@ -428,25 +428,25 @@ export default function Main() {
               }}
               type="button"
               aria-expanded={openPosition === 'hero'}
-              className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-white/80 text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#1b2d4e]/40 focus-visible:outline-none dark:bg-[#1a1916] dark:focus-visible:ring-[#8fa7cc]/40 ${openPosition === 'hero' ? 'border-[#1b2d4e] dark:border-[#8fa7cc]' : 'border-transparent'}`}
+              className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-white/80 text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#7a1f2e]/40 focus-visible:outline-none ${openPosition === 'hero' ? 'border-[#7a1f2e]' : 'border-transparent'}`}
               onClick={() => togglePosition('hero')}
             >
               <div className="flex items-center gap-3 px-4 py-4">
                 <div className="min-w-0 flex-1">
-                  <div className="text-[10px] font-semibold tracking-[0.12em] text-gray-400 uppercase dark:text-gray-500">
+                  <div className="text-[10px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                     {heroPosition.period} · {heroPosition.duration}
                   </div>
-                  <div className="font-display mt-1 text-xl leading-tight text-gray-900 dark:text-gray-100">
+                  <div className="font-display mt-1 text-xl leading-tight text-gray-900">
                     {heroPosition.role}
                   </div>
-                  <div className="mt-0.5 text-xs font-medium text-[#1b2d4e] dark:text-[#8fa7cc]">
+                  <div className="mt-0.5 text-xs font-medium text-[#7a1f2e]">
                     {heroPosition.company}
                   </div>
                 </div>
                 <motion.svg
                   animate={{ rotate: openPosition === 'hero' ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="h-5 w-5 shrink-0 text-gray-300 dark:text-gray-600"
+                  className="h-5 w-5 shrink-0 text-gray-300"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -461,17 +461,17 @@ export default function Main() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="border-t border-gray-200 px-4 pt-3 pb-4 dark:border-gray-800">
-                    <p className="text-[13px] leading-relaxed text-gray-500 dark:text-gray-400">
+                  <div className="border-t border-gray-200 px-4 pt-3 pb-4">
+                    <p className="text-[13px] leading-relaxed text-gray-500">
                       {heroPosition.desc}
                     </p>
-                    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 border-t border-gray-200 pt-3 dark:border-gray-800">
+                    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 border-t border-gray-200 pt-3">
                       {heroPosition.stats.map((stat) => (
                         <div key={stat.label} className="flex flex-col">
-                          <span className="font-display text-lg text-[#1b2d4e] dark:text-[#8fa7cc]">
+                          <span className="font-display text-lg text-[#7a1f2e]">
                             {stat.num}
                           </span>
-                          <span className="text-[9px] font-semibold tracking-wider text-gray-400 uppercase dark:text-gray-500">
+                          <span className="text-[9px] font-semibold tracking-wider text-gray-400 uppercase">
                             {stat.label}
                           </span>
                         </div>
@@ -486,7 +486,7 @@ export default function Main() {
           {positions.map((pos, i) => (
             <div key={pos.period} className="relative scroll-mt-4">
               <div
-                className={`absolute top-1/2 -left-7 z-[2] h-3 w-3 -translate-y-1/2 rounded-full border-2 border-[#f5f2ed] transition-colors duration-300 dark:border-[#111110] ${openPosition === i ? 'bg-[#1b2d4e] dark:bg-[#8fa7cc]' : 'bg-gray-300 dark:bg-gray-600'}`}
+                className={`absolute top-1/2 -left-7 z-[2] h-3 w-3 -translate-y-1/2 rounded-full border-2 border-[#e2e7dd] transition-colors duration-300 ${openPosition === i ? 'bg-[#7a1f2e]' : 'bg-gray-300'}`}
               />
               <button
                 ref={(el) => {
@@ -494,33 +494,33 @@ export default function Main() {
                 }}
                 type="button"
                 aria-expanded={openPosition === i}
-                className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-white/80 text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#1b2d4e]/40 focus-visible:outline-none dark:bg-[#1a1916] dark:focus-visible:ring-[#8fa7cc]/40 ${openPosition === i ? 'border-[#1b2d4e] dark:border-[#8fa7cc]' : 'border-transparent'}`}
+                className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-white/80 text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#7a1f2e]/40 focus-visible:outline-none ${openPosition === i ? 'border-[#7a1f2e]' : 'border-transparent'}`}
                 onClick={() => togglePosition(i)}
               >
                 <div className="flex items-center gap-3 px-4 py-3.5">
                   <div className="min-w-0 flex-1">
-                    <div className="text-[10px] font-semibold tracking-[0.12em] text-gray-400 uppercase dark:text-gray-500">
+                    <div className="text-[10px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                       {pos.period} · {pos.duration}
                     </div>
-                    <div className="font-display mt-0.5 text-[17px] leading-tight text-gray-900 dark:text-gray-100">
+                    <div className="font-display mt-0.5 text-[17px] leading-tight text-gray-900">
                       {pos.role}
                     </div>
-                    <div className="mt-0.5 text-xs font-medium text-[#1b2d4e] dark:text-[#8fa7cc]">
+                    <div className="mt-0.5 text-xs font-medium text-[#7a1f2e]">
                       {pos.company}
                     </div>
                   </div>
                   <div className="shrink-0 text-right">
-                    <div className="font-display text-[18px] text-[#1b2d4e] dark:text-[#8fa7cc]">
+                    <div className="font-display text-[18px] text-[#7a1f2e]">
                       {pos.metricNum}
                     </div>
-                    <div className="text-[9px] font-semibold tracking-wider text-gray-400 uppercase dark:text-gray-500">
+                    <div className="text-[9px] font-semibold tracking-wider text-gray-400 uppercase">
                       {pos.metricLabel}
                     </div>
                   </div>
                   <motion.svg
                     animate={{ rotate: openPosition === i ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="h-5 w-5 shrink-0 text-gray-300 dark:text-gray-600"
+                    className="h-5 w-5 shrink-0 text-gray-300"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -535,18 +535,18 @@ export default function Main() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <div className="border-t border-gray-200 px-4 pt-3 pb-4 dark:border-gray-800">
-                      <p className="text-[13px] leading-relaxed text-gray-500 dark:text-gray-400">
+                    <div className="border-t border-gray-200 px-4 pt-3 pb-4">
+                      <p className="text-[13px] leading-relaxed text-gray-500">
                         {pos.oneLiner}
                       </p>
                       {pos.extraMetrics.length > 0 && (
-                        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 border-t border-gray-200 pt-3 dark:border-gray-800">
+                        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 border-t border-gray-200 pt-3">
                           {pos.extraMetrics.map((m) => (
                             <div key={m.label} className="flex flex-col">
-                              <span className="font-display text-lg text-[#1b2d4e] dark:text-[#8fa7cc]">
+                              <span className="font-display text-lg text-[#7a1f2e]">
                                 {m.num}
                               </span>
-                              <span className="text-[9px] font-semibold tracking-wider text-gray-400 uppercase dark:text-gray-500">
+                              <span className="text-[9px] font-semibold tracking-wider text-gray-400 uppercase">
                                 {m.label}
                               </span>
                             </div>
@@ -565,11 +565,11 @@ export default function Main() {
       {/* ═══ COMPANIES ═══ */}
       <section id="companies" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 dark:border-gray-100">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
+          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3">
+            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
               Компании
             </h2>
-            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase dark:text-gray-500">
+            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
               Работа в холдингах
             </span>
           </div>
@@ -577,30 +577,30 @@ export default function Main() {
 
         {companies.map((c, i) => (
           <Reveal key={c.title} delay={i * 0.08}>
-            <ScrollActiveCard className="group relative mb-4 overflow-hidden border border-gray-200 bg-white/80 p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#1b2d4e] hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)] sm:p-10 dark:border-gray-800 dark:bg-[#1a1916] dark:hover:border-[#8fa7cc] dark:hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] [&.in-view]:border-[#1b2d4e] [&.in-view]:shadow-[0_20px_60px_rgba(0,0,0,0.06)] dark:[&.in-view]:border-[#8fa7cc] dark:[&.in-view]:shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
-              <div className="absolute top-0 left-0 h-0 w-1 bg-[#1b2d4e] transition-all duration-500 ease-out group-hover:h-full group-[.in-view]:h-full dark:bg-[#8fa7cc]" />
+            <ScrollActiveCard className="group relative mb-4 overflow-hidden border border-gray-200 bg-white/80 p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#7a1f2e] hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)] sm:p-10 [&.in-view]:border-[#7a1f2e] [&.in-view]:shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+              <div className="absolute top-0 left-0 h-0 w-1 bg-[#7a1f2e] transition-all duration-500 ease-out group-hover:h-full group-[.in-view]:h-full" />
               <div className="flex flex-wrap items-center gap-3">
-                <span className="inline-block border border-[#1b2d4e] px-2.5 py-0.5 text-[11px] font-semibold tracking-widest text-[#1b2d4e] uppercase dark:border-[#8fa7cc] dark:text-[#8fa7cc]">
+                <span className="inline-block border border-[#7a1f2e] px-2.5 py-0.5 text-[11px] font-semibold tracking-widest text-[#7a1f2e] uppercase">
                   {c.badge}
                 </span>
-                <span className="text-[11px] font-semibold tracking-[0.12em] text-gray-400 uppercase dark:text-gray-500">
+                <span className="text-[11px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                   {c.period}
                 </span>
               </div>
-              <h3 className="font-display mt-4 text-2xl text-gray-900 sm:text-3xl dark:text-gray-100">
+              <h3 className="font-display mt-4 text-2xl text-gray-900 sm:text-3xl">
                 {c.title}
               </h3>
-              <div className="mt-1 text-xs font-semibold tracking-[.12em] text-[#1b2d4e] uppercase dark:text-[#8fa7cc]">
+              <div className="mt-1 text-xs font-semibold tracking-[.12em] text-[#7a1f2e] uppercase">
                 {c.role}
               </div>
-              <p className="mt-4 max-w-3xl text-sm leading-7 font-light text-gray-500 dark:text-gray-400">
+              <p className="mt-4 max-w-3xl text-sm leading-7 font-light text-gray-500">
                 {c.desc}
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {c.tags.map((tag, ti) => (
                   <span
                     key={`${c.title}-${ti}`}
-                    className="border border-gray-300 px-3 py-1 text-[11px] font-medium tracking-wider text-gray-500 uppercase transition-all duration-300 group-hover:border-[#1b2d4e]/50 group-hover:text-[#1b2d4e] group-[.in-view]:border-[#1b2d4e]/50 group-[.in-view]:text-[#1b2d4e] dark:border-gray-700 dark:text-gray-400 dark:group-hover:border-[#8fa7cc]/50 dark:group-hover:text-[#8fa7cc] dark:group-[.in-view]:border-[#8fa7cc]/50 dark:group-[.in-view]:text-[#8fa7cc]"
+                    className="border border-gray-300 px-3 py-1 text-[11px] font-medium tracking-wider text-gray-500 uppercase transition-all duration-300 group-hover:border-[#7a1f2e]/50 group-hover:text-[#7a1f2e] group-[.in-view]:border-[#7a1f2e]/50 group-[.in-view]:text-[#7a1f2e]"
                   >
                     {tag}
                   </span>
@@ -614,30 +614,30 @@ export default function Main() {
       {/* ═══ COMPETENCIES ═══ */}
       <section id="competencies" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 dark:border-gray-100">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
+          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3">
+            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
               Компетенции
             </h2>
-            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase dark:text-gray-500">
+            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
               Области экспертизы
             </span>
           </div>
         </Reveal>
 
-        <div className="border-t border-gray-200 pt-10 dark:border-gray-800">
+        <div className="border-t border-gray-200 pt-10">
           <StaggerContainer className="grid grid-cols-2 xl:grid-cols-4" stagger={0.1}>
             {competencies.map((col, i) => (
               <StaggerItem
                 key={col.title}
-                className={`border-gray-200 px-5 py-8 sm:px-6 xl:px-8 dark:border-gray-800 ${
+                className={`border-gray-200 px-5 py-8 sm:px-6 xl:px-8 ${
                   i % 2 === 0 ? 'border-r' : ''
                 } ${i < 2 ? 'border-b xl:border-b-0' : ''} ${
                   i < 3 ? 'xl:border-r' : 'xl:border-r-0'
                 }`}
               >
-                <h3 className="group/title font-display relative inline-block text-lg text-gray-900 dark:text-gray-100">
+                <h3 className="group/title font-display relative inline-block text-lg text-gray-900">
                   {col.title}
-                  <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-[#1b2d4e] transition-all duration-300 group-hover/title:w-full dark:bg-[#8fa7cc]" />
+                  <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-[#7a1f2e] transition-all duration-300 group-hover/title:w-full" />
                 </h3>
                 <ul className="mt-5 flex flex-col gap-0">
                   {col.items.map((item, ii) => (
@@ -645,8 +645,8 @@ export default function Main() {
                       key={`${col.title}-${ii}`}
                       className="group/item flex items-start gap-2.5 py-2 transition-all duration-200 hover:pl-1"
                     >
-                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 transition-colors duration-200 group-hover/item:bg-[#1b2d4e] dark:bg-gray-700 dark:group-hover/item:bg-[#8fa7cc]" />
-                      <span className="text-sm leading-relaxed text-gray-600 transition-colors duration-200 group-hover/item:text-gray-900 dark:text-gray-400 dark:group-hover/item:text-gray-100">
+                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 transition-colors duration-200 group-hover/item:bg-[#7a1f2e]" />
+                      <span className="text-sm leading-relaxed text-gray-600 transition-colors duration-200 group-hover/item:text-gray-900">
                         {item}
                       </span>
                     </li>
@@ -661,11 +661,11 @@ export default function Main() {
       {/* ═══ EDUCATION ═══ */}
       <section id="education" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 dark:border-gray-100">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
+          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3">
+            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
               Образование
             </h2>
-            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase dark:text-gray-500">
+            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
               Курсы и квалификация
             </span>
           </div>
@@ -674,15 +674,15 @@ export default function Main() {
         <div className="flex flex-col">
           {education.map((edu, i) => (
             <Reveal key={`${edu.year}-${edu.place}`} delay={i * 0.06}>
-              <div className="group grid grid-cols-[80px_1fr] items-baseline gap-5 border-b border-gray-200 py-5 transition-all duration-200 hover:pl-2 sm:grid-cols-[120px_1fr] sm:gap-8 sm:py-6 dark:border-gray-800">
-                <div className="font-display text-2xl text-[#1b2d4e] sm:text-3xl dark:text-[#8fa7cc]">
+              <div className="group grid grid-cols-[80px_1fr] items-baseline gap-5 border-b border-gray-200 py-5 transition-all duration-200 hover:pl-2 sm:grid-cols-[120px_1fr] sm:gap-8 sm:py-6">
+                <div className="font-display text-2xl text-[#7a1f2e] sm:text-3xl">
                   {edu.year}
                 </div>
                 <div className="min-w-0">
-                  <div className="text-[11px] font-semibold tracking-[0.12em] text-gray-400 uppercase dark:text-gray-500">
+                  <div className="text-[11px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                     {edu.place}
                   </div>
-                  <h3 className="font-display mt-1 text-lg leading-snug text-gray-900 transition-colors duration-200 group-hover:text-[#1b2d4e] sm:text-xl dark:text-gray-100 dark:group-hover:text-[#8fa7cc]">
+                  <h3 className="font-display mt-1 text-lg leading-snug text-gray-900 transition-colors duration-200 group-hover:text-[#7a1f2e] sm:text-xl">
                     {edu.title}
                   </h3>
                 </div>

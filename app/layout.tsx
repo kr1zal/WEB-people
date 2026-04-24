@@ -5,7 +5,6 @@ import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
 const spaceGrotesk = Space_Grotesk({
@@ -77,14 +76,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       </head>
-      <body className="overflow-x-hidden bg-[#f5f2ed] pl-[calc(100vw-100%)] text-black antialiased dark:bg-[#111110] dark:text-white">
-        <ThemeProviders>
-          <SectionContainer>
-            <Header />
-            <main className="mb-auto">{children}</main>
-            <Footer />
-          </SectionContainer>
-        </ThemeProviders>
+      <body className="overflow-x-hidden bg-[#e2e7dd] pl-[calc(100vw-100%)] text-black antialiased">
+        <SectionContainer>
+          <Header />
+          <main className="mb-auto">{children}</main>
+          <Footer />
+        </SectionContainer>
       </body>
     </html>
   )
