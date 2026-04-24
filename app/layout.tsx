@@ -1,4 +1,4 @@
-import 'css/tailwind.css'
+import '@/css/tailwind.css'
 
 import { IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google'
 import Header from '@/components/Header'
@@ -62,20 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href={`${basePath}/static/favicons/favicon-32x32.png`}
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href={`${basePath}/static/favicons/favicon-16x16.png`}
-        />
-        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+        <meta name="theme-color" content="#e2e7dd" />
       </head>
       <body className="overflow-x-hidden bg-[#e2e7dd] pl-[calc(100vw-100%)] text-[#1e2420] antialiased">
         <SectionContainer>
