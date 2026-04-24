@@ -1,8 +1,9 @@
 'use client'
 
 import Link from '@/components/Link'
-import Image from '@/components/Image'
 import { motion, useReducedMotion } from 'framer-motion'
+
+const PHOTO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/static/images/oksana.jpg`
 import { useState, useLayoutEffect, useCallback, useRef } from 'react'
 import {
   Reveal,
@@ -233,8 +234,9 @@ export default function Main() {
           {...photoReveal}
           className="absolute top-0 right-0 hidden h-full w-[50%] overflow-hidden md:block lg:w-[55%]"
         >
-          <Image
-            src="/static/images/oksana.jpg"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={PHOTO_SRC}
             alt="Дегтярева Оксана Владимировна"
             width={960}
             height={1280}
@@ -248,8 +250,9 @@ export default function Main() {
         <div className="relative z-10 mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-[1380px] flex-col justify-start px-6 pt-[72px] sm:px-12 sm:pt-[100px] lg:pt-[140px]">
           <motion.div {...photoReveal} className="mb-8 md:hidden">
             <div className="relative aspect-[3/4] w-full overflow-hidden">
-              <Image
-                src="/static/images/oksana.jpg"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={PHOTO_SRC}
                 alt="Дегтярева Оксана Владимировна"
                 width={680}
                 height={907}
