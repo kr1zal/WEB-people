@@ -292,7 +292,7 @@ export default function Main() {
               href="#companies"
               className="rounded-lg bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-px hover:shadow-md dark:bg-gray-100 dark:text-gray-900"
             >
-              Мои компании
+              Компании
             </Link>
             <Link
               href="#experience"
@@ -303,14 +303,11 @@ export default function Main() {
           </motion.div>
 
           <motion.div {...heroFade(0.8)} className="mt-auto pt-10 pb-8 lg:pt-16 lg:pb-12">
-            <div className="max-w-[520px] border-l-[3px] border-[#1b2d4e] pl-5 dark:border-[#8fa7cc]">
+            <div className="max-w-[560px] border-l-[3px] border-[#1b2d4e] pl-5 dark:border-[#8fa7cc]">
               <p className="font-display text-lg leading-[1.5] font-normal text-gray-900 italic dark:text-gray-100">
-                Финансы — это язык, на котором бизнес говорит сам с собой. Моя задача — делать его
-                понятным для собственника.
+                Пока не построена юнит-экономика, любой отчёт — только интуиция. Моя работа —
+                заменить интуицию расчётом.
               </p>
-              <cite className="mt-3 block text-[11px] font-medium tracking-[0.12em] text-gray-400 uppercase not-italic dark:text-gray-500">
-                Подход к работе
-              </cite>
             </div>
           </motion.div>
         </div>
@@ -571,10 +568,10 @@ export default function Main() {
         <Reveal>
           <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 dark:border-gray-100">
             <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
-              Мои компании
+              Компании
             </h2>
             <span className="text-xs font-medium tracking-widest text-gray-400 uppercase dark:text-gray-500">
-              Холдинги под управлением
+              Работа в холдингах
             </span>
           </div>
         </Reveal>
