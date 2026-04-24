@@ -7,9 +7,9 @@
 @theme {
   /* Font families */
   --font-sans:
-    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-display: var(--font-dm-serif), Georgia, serif;
+  --font-display: var(--font-ibm-plex-serif), Georgia, serif;
 
   /* Colors — Neutral enterprise palette */
   --color-primary-50: oklch(0.975 0.006 260);

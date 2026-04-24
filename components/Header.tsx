@@ -16,6 +16,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
+    handleScroll()
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -52,8 +53,8 @@ const Header = () => {
                     href={link.href}
                     className={`group relative inline-block py-1 text-sm font-medium tracking-wider uppercase transition-colors duration-200 ${
                       isActive(link.href)
-                        ? 'text-[#1a1a1a]'
-                        : 'text-[#4a4640] hover:text-[#1a1a1a]'
+                        ? 'text-[#1e2420]'
+                        : 'text-[#4a514d] hover:text-[#1e2420]'
                     }`}
                   >
                     {link.title}

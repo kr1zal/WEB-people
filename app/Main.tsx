@@ -178,9 +178,9 @@ const education = [
 const typingRoles = [
   'Финансовый директор',
   'CFO',
-  'Управление холдингом',
-  'Контроллинг',
-  'Финансист-лидер',
+  'Юнит-экономика',
+  'Бюджетирование',
+  'Финансы FMCG',
 ]
 
 export default function Main() {
@@ -262,7 +262,7 @@ export default function Main() {
 
           <motion.h1
             {...heroFade(0.15)}
-            className="font-display max-w-[520px] text-5xl leading-[1.05] tracking-tight text-gray-900 sm:text-6xl lg:text-[clamp(48px,5vw,72px)] xl:text-[clamp(56px,6vw,80px)]"
+            className="font-display max-w-[520px] text-5xl leading-[1.05] tracking-tight text-[#1e2420] sm:text-6xl lg:text-[clamp(48px,5vw,72px)] xl:text-[clamp(56px,6vw,80px)]"
           >
             Оксана
             <br />
@@ -280,17 +280,17 @@ export default function Main() {
             {...heroFade(0.45)}
             className="mt-6 max-w-[500px] text-base leading-7 text-gray-600"
           >
-            <strong className="font-semibold text-gray-900">
+            <strong className="font-semibold text-[#1e2420]">
               15+ лет в финансах, 10+ лет управленческого опыта.
             </strong>{' '}
             Финансовый директор Холдинга. Строю финансовые структуры, юнит-экономику и системы
-            бюджетирования в компаниях с оборотом до 5+ млрд ₽.
+            бюджетирования в компаниях с оборотом 5+ млрд ₽.
           </motion.p>
 
           <motion.div {...heroFade(0.6)} className="mt-8 flex gap-3">
             <Link
               href="#companies"
-              className="rounded-lg bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-px hover:shadow-md"
+              className="rounded-lg bg-[#1e2420] px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-px hover:shadow-md"
             >
               Компании
             </Link>
@@ -304,7 +304,7 @@ export default function Main() {
 
           <motion.div {...heroFade(0.8)} className="mt-auto pt-10 pb-8 lg:pt-16 lg:pb-12">
             <div className="max-w-[560px] border-l-[3px] border-[#7a1f2e] pl-5">
-              <p className="font-display text-lg leading-[1.5] font-normal text-gray-900 italic">
+              <p className="font-display text-lg leading-[1.5] font-normal text-[#1e2420] italic">
                 Финансы — язык бизнеса. Задача финдиректора — говорить на нём без акцента.
               </p>
             </div>
@@ -315,8 +315,8 @@ export default function Main() {
       {/* ═══ EXPERIENCE ═══ */}
       <section id="experience" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-10 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3 sm:mb-12">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          <div className="mb-10 flex items-baseline justify-between border-b-[3px] border-[#1e2420] pb-3 sm:mb-12">
+            <h2 className="font-display text-3xl tracking-tight text-[#1e2420] sm:text-4xl">
               Опыт
             </h2>
             <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
@@ -351,7 +351,7 @@ export default function Main() {
                 <div className="text-[11px] font-semibold tracking-[0.15em] text-gray-400 uppercase">
                   {heroPosition.period} · {heroPosition.duration}
                 </div>
-                <h3 className="font-display mt-3 text-[32px] leading-[1.2] text-gray-900">
+                <h3 className="font-display mt-3 text-[32px] leading-[1.2] text-[#1e2420]">
                   {heroPosition.role}
                 </h3>
                 <div className="mt-1.5 text-base font-medium text-[#7a1f2e]">
@@ -390,7 +390,7 @@ export default function Main() {
                     </div>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-display text-xl text-gray-900 transition-colors duration-200 group-hover:text-[#7a1f2e]">
+                    <h3 className="font-display text-xl text-[#1e2420] transition-colors duration-200 group-hover:text-[#7a1f2e]">
                       {pos.role}
                     </h3>
                     <div className="mt-0.5 text-[13px] font-medium text-[#7a1f2e]">
@@ -428,7 +428,7 @@ export default function Main() {
               }}
               type="button"
               aria-expanded={openPosition === 'hero'}
-              className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-white/80 text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#7a1f2e]/40 focus-visible:outline-none ${openPosition === 'hero' ? 'border-[#7a1f2e]' : 'border-transparent'}`}
+              className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-[#edf0e8] text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#7a1f2e]/40 focus-visible:outline-none ${openPosition === 'hero' ? 'border-[#7a1f2e]' : 'border-transparent'}`}
               onClick={() => togglePosition('hero')}
             >
               <div className="flex items-center gap-3 px-4 py-4">
@@ -436,7 +436,7 @@ export default function Main() {
                   <div className="text-[10px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                     {heroPosition.period} · {heroPosition.duration}
                   </div>
-                  <div className="font-display mt-1 text-xl leading-tight text-gray-900">
+                  <div className="font-display mt-1 text-xl leading-tight text-[#1e2420]">
                     {heroPosition.role}
                   </div>
                   <div className="mt-0.5 text-xs font-medium text-[#7a1f2e]">
@@ -494,7 +494,7 @@ export default function Main() {
                 }}
                 type="button"
                 aria-expanded={openPosition === i}
-                className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-white/80 text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#7a1f2e]/40 focus-visible:outline-none ${openPosition === i ? 'border-[#7a1f2e]' : 'border-transparent'}`}
+                className={`w-full cursor-pointer overflow-hidden rounded border-l-[3px] bg-[#edf0e8] text-left shadow-sm transition-[border-color,box-shadow] duration-300 focus-visible:ring-2 focus-visible:ring-[#7a1f2e]/40 focus-visible:outline-none ${openPosition === i ? 'border-[#7a1f2e]' : 'border-transparent'}`}
                 onClick={() => togglePosition(i)}
               >
                 <div className="flex items-center gap-3 px-4 py-3.5">
@@ -502,7 +502,7 @@ export default function Main() {
                     <div className="text-[10px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                       {pos.period} · {pos.duration}
                     </div>
-                    <div className="font-display mt-0.5 text-[17px] leading-tight text-gray-900">
+                    <div className="font-display mt-0.5 text-[17px] leading-tight text-[#1e2420]">
                       {pos.role}
                     </div>
                     <div className="mt-0.5 text-xs font-medium text-[#7a1f2e]">
@@ -565,8 +565,8 @@ export default function Main() {
       {/* ═══ COMPANIES ═══ */}
       <section id="companies" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-[#1e2420] pb-3">
+            <h2 className="font-display text-3xl tracking-tight text-[#1e2420] sm:text-4xl">
               Компании
             </h2>
             <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
@@ -577,7 +577,7 @@ export default function Main() {
 
         {companies.map((c, i) => (
           <Reveal key={c.title} delay={i * 0.08}>
-            <ScrollActiveCard className="group relative mb-4 overflow-hidden border border-gray-200 bg-white/80 p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#7a1f2e] hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)] sm:p-10 [&.in-view]:border-[#7a1f2e] [&.in-view]:shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+            <ScrollActiveCard className="group relative mb-4 overflow-hidden border border-gray-200 bg-[#edf0e8] p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#7a1f2e] hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)] sm:p-10 [&.in-view]:border-[#7a1f2e] [&.in-view]:shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
               <div className="absolute top-0 left-0 h-0 w-1 bg-[#7a1f2e] transition-all duration-500 ease-out group-hover:h-full group-[.in-view]:h-full" />
               <div className="flex flex-wrap items-center gap-3">
                 <span className="inline-block border border-[#7a1f2e] px-2.5 py-0.5 text-[11px] font-semibold tracking-widest text-[#7a1f2e] uppercase">
@@ -587,7 +587,7 @@ export default function Main() {
                   {c.period}
                 </span>
               </div>
-              <h3 className="font-display mt-4 text-2xl text-gray-900 sm:text-3xl">
+              <h3 className="font-display mt-4 text-2xl text-[#1e2420] sm:text-3xl">
                 {c.title}
               </h3>
               <div className="mt-1 text-xs font-semibold tracking-[.12em] text-[#7a1f2e] uppercase">
@@ -614,8 +614,8 @@ export default function Main() {
       {/* ═══ COMPETENCIES ═══ */}
       <section id="competencies" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-[#1e2420] pb-3">
+            <h2 className="font-display text-3xl tracking-tight text-[#1e2420] sm:text-4xl">
               Компетенции
             </h2>
             <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
@@ -635,7 +635,7 @@ export default function Main() {
                   i < 3 ? 'xl:border-r' : 'xl:border-r-0'
                 }`}
               >
-                <h3 className="group/title font-display relative inline-block text-lg text-gray-900">
+                <h3 className="group/title font-display relative inline-block text-lg text-[#1e2420]">
                   {col.title}
                   <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-[#7a1f2e] transition-all duration-300 group-hover/title:w-full" />
                 </h3>
@@ -646,7 +646,7 @@ export default function Main() {
                       className="group/item flex items-start gap-2.5 py-2 transition-all duration-200 hover:pl-1"
                     >
                       <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 transition-colors duration-200 group-hover/item:bg-[#7a1f2e]" />
-                      <span className="text-sm leading-relaxed text-gray-600 transition-colors duration-200 group-hover/item:text-gray-900">
+                      <span className="text-sm leading-relaxed text-gray-600 transition-colors duration-200 group-hover/item:text-[#1e2420]">
                         {item}
                       </span>
                     </li>
@@ -661,8 +661,8 @@ export default function Main() {
       {/* ═══ EDUCATION ═══ */}
       <section id="education" className="scroll-mt-20 py-10 sm:py-16">
         <Reveal>
-          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-gray-900 pb-3">
-            <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          <div className="mb-12 flex items-baseline justify-between border-b-[3px] border-[#1e2420] pb-3">
+            <h2 className="font-display text-3xl tracking-tight text-[#1e2420] sm:text-4xl">
               Образование
             </h2>
             <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
@@ -682,7 +682,7 @@ export default function Main() {
                   <div className="text-[11px] font-semibold tracking-[0.12em] text-gray-400 uppercase">
                     {edu.place}
                   </div>
-                  <h3 className="font-display mt-1 text-lg leading-snug text-gray-900 transition-colors duration-200 group-hover:text-[#7a1f2e] sm:text-xl">
+                  <h3 className="font-display mt-1 text-lg leading-snug text-[#1e2420] transition-colors duration-200 group-hover:text-[#7a1f2e] sm:text-xl">
                     {edu.title}
                   </h3>
                 </div>

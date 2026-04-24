@@ -1,23 +1,24 @@
 import 'css/tailwind.css'
 
-import { Space_Grotesk, DM_Serif_Display } from 'next/font/google'
+import { IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { Metadata } from 'next'
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin', 'latin-ext'],
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
-  variable: '--font-space-grotesk',
+  variable: '--font-ibm-plex-sans',
 })
 
-const dmSerifDisplay = DM_Serif_Display({
-  weight: '400',
-  subsets: ['latin', 'latin-ext'],
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
-  variable: '--font-dm-serif',
+  variable: '--font-ibm-plex-serif',
 })
 
 export const metadata: Metadata = {
@@ -57,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${spaceGrotesk.variable} ${dmSerifDisplay.variable} scroll-smooth`}
+      className={`${ibmPlexSans.variable} ${ibmPlexSerif.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <head>
@@ -76,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       </head>
-      <body className="overflow-x-hidden bg-[#e2e7dd] pl-[calc(100vw-100%)] text-black antialiased">
+      <body className="overflow-x-hidden bg-[#e2e7dd] pl-[calc(100vw-100%)] text-[#1e2420] antialiased">
         <SectionContainer>
           <Header />
           <main className="mb-auto">{children}</main>
