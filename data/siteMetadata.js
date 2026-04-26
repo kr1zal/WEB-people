@@ -7,7 +7,7 @@ const siteMetadata = {
     'Дегтярева Оксана Владимировна — финансовый директор Холдинга с 15+ летним опытом. Финансовая структура, юнит-экономика, бюджетирование, управление Холдингом с оборотом 5+ млрд ₽.',
   language: 'ru-RU',
   theme: 'light',
-  siteUrl: 'https://kr1zal.github.io/WEB-people',
+  siteUrl: 'https://kr1zal.github.io',
   siteRepo: 'https://github.com/kr1zal/WEB-people',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/oksana.jpg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/oksana.jpg`,
