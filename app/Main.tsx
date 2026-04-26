@@ -360,7 +360,7 @@ export default function Main() {
                 <div className="mt-1.5 text-base font-medium text-[#7a1f2e] 2xl:mt-2 2xl:text-lg">
                   {heroPosition.company}
                 </div>
-                <p className="mt-4 max-w-[580px] text-[15px] leading-[1.75] text-gray-600 2xl:mt-5 2xl:max-w-[640px] 2xl:text-[17px] 2xl:leading-[1.7] 2xl:text-gray-700">
+                <p className="mt-4 max-w-[580px] text-base leading-[1.7] text-gray-700 2xl:mt-5 2xl:max-w-[640px] 2xl:text-[17px]">
                   {heroPosition.desc}
                 </p>
               </div>
@@ -399,7 +399,7 @@ export default function Main() {
                     <div className="mt-0.5 text-[13px] font-medium text-[#7a1f2e] 2xl:mt-1 2xl:text-[15px]">
                       {pos.company}
                     </div>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-gray-600 2xl:mt-2.5 2xl:max-w-[640px] 2xl:text-[15px] 2xl:leading-[1.65]">
+                    <p className="mt-2 text-[14px] leading-[1.6] text-gray-600 2xl:mt-2.5 2xl:max-w-[640px] 2xl:text-[15px] 2xl:leading-[1.65]">
                       {pos.oneLiner}
                     </p>
                   </div>
@@ -407,7 +407,7 @@ export default function Main() {
                     <div className="font-display text-[22px] text-[#7a1f2e] 2xl:text-[28px]">
                       {pos.metricNum}
                     </div>
-                    <div className="mt-1 text-[10px] font-semibold tracking-[0.08em] text-gray-500 uppercase 2xl:mt-1.5 2xl:text-[12px] 2xl:tracking-[0.1em]">
+                    <div className="mt-1.5 text-[11px] font-semibold tracking-[0.08em] text-gray-500 uppercase 2xl:mt-1.5 2xl:text-[12px] 2xl:tracking-[0.1em]">
                       {pos.metricLabel}
                     </div>
                   </div>
