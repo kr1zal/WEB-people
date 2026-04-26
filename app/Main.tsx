@@ -322,23 +322,23 @@ export default function Main() {
             <h2 className="font-display text-3xl tracking-tight text-[#1e2420] sm:text-4xl">
               Опыт
             </h2>
-            <span className="text-xs font-medium tracking-widest text-gray-400 uppercase">
+            <span className="text-xs font-medium tracking-widest text-gray-500 uppercase 2xl:text-[13px]">
               Карьерный путь
             </span>
           </div>
         </Reveal>
 
         <Reveal>
-          <div className="mb-10 grid grid-cols-2 gap-y-5 border-b border-gray-200 pb-7 sm:mb-12 sm:flex sm:gap-0 sm:pb-7">
+          <div className="mb-10 grid grid-cols-2 gap-y-5 border-b border-gray-200 pb-7 sm:mb-12 sm:flex sm:gap-0 sm:pb-7 2xl:pb-9">
             {impactNumbers.map((item, i) => (
               <div
                 key={item.label}
-                className={`${i % 2 === 1 ? 'border-l border-gray-200 pl-5' : 'pr-5'} sm:flex-1 ${i > 0 ? 'sm:border-l sm:border-gray-200 sm:pl-6' : ''} sm:pr-6`}
+                className={`${i % 2 === 1 ? 'border-l border-gray-200 pl-5' : 'pr-5'} sm:flex-1 ${i > 0 ? 'sm:border-l sm:border-gray-200 sm:pl-6' : ''} sm:pr-6 ${i === impactNumbers.length - 1 ? '2xl:flex 2xl:flex-col 2xl:items-center 2xl:text-center' : ''}`}
               >
                 <div className="font-display text-3xl text-[#7a1f2e] sm:text-4xl lg:text-5xl">
                   {item.num}
                 </div>
-                <div className="mt-1.5 text-xs text-gray-500 sm:text-[13px]">
+                <div className="mt-1.5 text-xs text-gray-600 sm:text-[13px] 2xl:mt-2 2xl:text-[14px]">
                   {item.label}
                 </div>
               </div>
@@ -349,18 +349,18 @@ export default function Main() {
         {/* ── Desktop: Hero + Rows ── */}
         <div className="hidden md:block">
           <Reveal>
-            <div className="grid grid-cols-[1fr_280px] gap-8 border-b border-gray-200 pb-10 lg:grid-cols-[1fr_340px] lg:gap-12">
+            <div className="grid grid-cols-[1fr_280px] gap-8 border-b border-gray-200 pb-10 lg:grid-cols-[1fr_340px] lg:gap-12 2xl:grid-cols-[1fr_400px] 2xl:gap-16 2xl:pb-14">
               <div>
-                <div className="text-[11px] font-semibold tracking-[0.15em] text-gray-400 uppercase">
+                <div className="text-[11px] font-semibold tracking-[0.15em] text-gray-500 uppercase 2xl:text-[12px] 2xl:tracking-[0.12em]">
                   {heroPosition.period} · {heroPosition.duration}
                 </div>
-                <h3 className="font-display mt-3 text-[32px] leading-[1.2] text-[#1e2420]">
+                <h3 className="font-display mt-3 text-[32px] leading-[1.2] text-[#1e2420] 2xl:mt-4 2xl:text-[38px]">
                   {heroPosition.role}
                 </h3>
-                <div className="mt-1.5 text-base font-medium text-[#7a1f2e]">
+                <div className="mt-1.5 text-base font-medium text-[#7a1f2e] 2xl:mt-2 2xl:text-lg">
                   {heroPosition.company}
                 </div>
-                <p className="mt-4 max-w-[580px] text-[15px] leading-[1.75] text-gray-600">
+                <p className="mt-4 max-w-[580px] text-[15px] leading-[1.75] text-gray-600 2xl:mt-5 2xl:max-w-[640px] 2xl:text-[17px] 2xl:leading-[1.7] 2xl:text-gray-700">
                   {heroPosition.desc}
                 </p>
               </div>
@@ -383,31 +383,31 @@ export default function Main() {
           <div className="flex flex-col">
             {positions.map((pos, i) => (
               <Reveal key={pos.period} delay={i * 0.08}>
-                <div className="group grid grid-cols-[180px_1fr_auto] items-baseline gap-6 border-b border-gray-200 py-6 transition-all duration-200 hover:pl-2">
+                <div className="group grid grid-cols-[180px_1fr_auto] items-baseline gap-6 border-b border-gray-200 py-6 transition-all duration-200 hover:pl-2 2xl:grid-cols-[160px_1fr_auto] 2xl:gap-10 2xl:py-8">
                   <div>
-                    <div className="text-xs font-semibold tracking-[0.08em] text-gray-400 uppercase">
+                    <div className="text-xs font-semibold tracking-[0.08em] text-gray-500 uppercase 2xl:text-[13px] 2xl:tracking-[0.1em]">
                       {pos.period}
                     </div>
-                    <div className="mt-0.5 text-[11px] text-gray-400 opacity-70">
+                    <div className="mt-0.5 text-[11px] text-gray-400 opacity-80 2xl:mt-1 2xl:text-xs">
                       {pos.duration}
                     </div>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-display text-xl text-[#1e2420] transition-colors duration-200 group-hover:text-[#7a1f2e]">
+                    <h3 className="font-display text-xl text-[#1e2420] transition-colors duration-200 group-hover:text-[#7a1f2e] 2xl:text-2xl">
                       {pos.role}
                     </h3>
-                    <div className="mt-0.5 text-[13px] font-medium text-[#7a1f2e]">
+                    <div className="mt-0.5 text-[13px] font-medium text-[#7a1f2e] 2xl:mt-1 2xl:text-[15px]">
                       {pos.company}
                     </div>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-gray-500">
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-gray-600 2xl:mt-2.5 2xl:max-w-[640px] 2xl:text-[15px] 2xl:leading-[1.65]">
                       {pos.oneLiner}
                     </p>
                   </div>
                   <div className="text-right">
-                    <div className="font-display text-[22px] text-[#7a1f2e]">
+                    <div className="font-display text-[22px] text-[#7a1f2e] 2xl:text-[28px]">
                       {pos.metricNum}
                     </div>
-                    <div className="mt-1 text-[10px] font-semibold tracking-[0.08em] text-gray-400 uppercase">
+                    <div className="mt-1 text-[10px] font-semibold tracking-[0.08em] text-gray-500 uppercase 2xl:mt-1.5 2xl:text-[12px] 2xl:tracking-[0.1em]">
                       {pos.metricLabel}
                     </div>
                   </div>
