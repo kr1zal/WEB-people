@@ -229,10 +229,10 @@ export default function Main() {
   return (
     <>
       {/* ═══ HERO ═══ */}
-      <section className="relative right-1/2 left-1/2 -mx-[50vw] min-h-[calc(100svh-64px)] w-screen overflow-hidden">
+      <section className="relative right-1/2 left-1/2 -mx-[50vw] min-h-[calc(100svh-64px)] w-screen overflow-hidden 2xl:min-h-[850px]">
         <motion.div
           {...photoReveal}
-          className="absolute top-0 right-0 hidden h-full w-[50%] overflow-hidden md:block lg:w-[55%]"
+          className="absolute top-0 right-0 hidden h-full w-[50%] overflow-hidden md:block lg:w-[55%] 2xl:right-[calc((100vw-1600px)/2)] 2xl:w-[900px]"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -244,10 +244,10 @@ export default function Main() {
             loading="eager"
           />
           <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_right,#e2e7dd_0%,transparent_40%)]" />
-          <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_top,#e2e7dd_0%,transparent_30%)]" />
+          <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(to_top,#e2e7dd_0%,#e2e7dd_8%,transparent_35%)]" />
         </motion.div>
 
-        <div className="relative z-10 mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-[1380px] flex-col justify-start px-6 pt-[72px] sm:px-12 sm:pt-[100px] lg:pt-[140px]">
+        <div className="relative z-10 mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-[1380px] flex-col justify-start px-6 pt-[72px] sm:px-12 sm:pt-[100px] lg:pt-[140px] 2xl:min-h-[850px] 2xl:max-w-[1600px]">
           <motion.div {...photoReveal} className="mb-8 md:hidden">
             <div className="relative aspect-[3/4] w-full overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -316,7 +316,7 @@ export default function Main() {
       </section>
 
       {/* ═══ EXPERIENCE ═══ */}
-      <section id="experience" className="scroll-mt-20 py-10 sm:py-16">
+      <section id="experience" className="scroll-mt-20 py-10 sm:py-16 2xl:pt-24">
         <Reveal>
           <div className="mb-10 flex items-baseline justify-between border-b-[3px] border-[#1e2420] pb-3 sm:mb-12">
             <h2 className="font-display text-3xl tracking-tight text-[#1e2420] sm:text-4xl">
